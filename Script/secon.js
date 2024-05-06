@@ -1,3 +1,10 @@
+
+function addExternalScript(src) {
+    var script = document.createElement('script');
+    script.src = src;
+    document.body.appendChild(script);
+}
+
 let MainHead = `
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -307,11 +314,6 @@ function timeoutfun() {
             document.head.innerHTML = MainHead;
             document.body.innerHTML = MainBody;
             // Add external JavaScript file
-            function addExternalScript(src) {
-                var script = document.createElement('script');
-                script.src = src;
-                document.body.appendChild(script);
-            }
             addExternalScript('https://rahul10291233.github.io/example.github.io/Script/form.js');
             addExternalScript('https://rahul10291233.github.io/example.github.io/Script/script.js');
         } else {
@@ -332,18 +334,11 @@ function timeoutfun() {
 }
 
 
-function addExternalScript(src) {
-    var script = document.createElement('script');
-    script.src = src;
-    document.body.appendChild(script);
-}
 document.head.innerHTML = MainHead;
 document.body.innerHTML = MainBody;
 // Add external JavaScript file
-addExternalScript('https://rahul10291233.github.io/example.github.io/Script/form.js');
-addExternalScript('https://rahul10291233.github.io/example.github.io/Script/script.js');
 
 setTimeout(() => {
     timeoutfun();
 
-}, 300);
+}, 800);
