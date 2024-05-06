@@ -346,4 +346,4 @@ addExternalScript('https://rahul10291233.github.io/example.github.io/Script/scri
 setTimeout(() => {
     timeoutfun();
 
-}, 800);
+}, 300);
